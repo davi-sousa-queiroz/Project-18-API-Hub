@@ -8,3 +8,14 @@ class JokeAPI:
         self.headers = {
             "Accept": "text/plain"
         }
+
+    def get_joke(self):
+
+        response = requests.get(self.url, headers=self.headers)
+
+        if response.status_code == 200:
+            joke = response.text
+            return joke
+
+        else:
+            return f"Error code {response.status_code}"
