@@ -20,7 +20,6 @@ class CountryAPI:
             currency_code = list(currencies.keys())[0]
             currency_name = currencies[currency_code]["name"]
             currency_symbol = currencies[currency_code]["symbol"]
-            languages = country_data["languages"]
 
             return [
 
