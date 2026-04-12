@@ -29,3 +29,26 @@ class CountryAPI:
                 f"LANGUAGES:"
 
             ]
+
+    def languages_and_time(self):
+
+        response = requests.get(self.url)
+
+        if response.status_code == 200:
+
+            data = response.json()
+
+            country_data = data[0]
+
+            languages = country_data["languages"]
+
+            for language in languages:
+                return language
+
+            time_zones = country_data["timezones"]
+
+            for time_zone in time_zones:
+                return time_zone
+
+        else:
+            return "ERROR 404"
