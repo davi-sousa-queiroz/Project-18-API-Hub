@@ -2,7 +2,7 @@ import requests
 
 class PokemonAPI:
 
-    def __innit__(self, name):
+    def __init__(self, name):
 
         self.name = name
         self.base_url = "https://pokeapi.co/api/v2/"
