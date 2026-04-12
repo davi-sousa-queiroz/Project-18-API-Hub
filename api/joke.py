@@ -27,3 +27,4 @@ class JokeAPI:
         for _ in range(quantity):
             input("Press enter for next joke")
             print(f"\n{jokes.get_joke()}")
+#
