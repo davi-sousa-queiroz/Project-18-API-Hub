@@ -19,3 +19,11 @@ class JokeAPI:
 
         else:
             return f"Error code {response.status_code}"
+
+    def show_jokes(self, quantity):
+
+        jokes = JokeAPI()
+
+        for _ in range(quantity):
+            input("Press enter for next joke")
+            print(f"\n{jokes.get_joke()}")
