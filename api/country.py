@@ -21,14 +21,10 @@ class CountryAPI:
             currency_name = currencies[currency_code]["name"]
             currency_symbol = currencies[currency_code]["symbol"]
 
-            return [
-
-                f"Capital: {country_data["capital"][0]}",
-                f"Population: {country_data["population"]}",
-                f"Currency: {currency_name} ({currency_symbol})",
-                f"LANGUAGES:"
-
-            ]
+            print(f"\nCapital: {country_data["capital"][0]}",
+                f"\nPopulation: {country_data["population"]}",
+                f"\nCurrency: {currency_name} ({currency_symbol})",
+                f"\nLANGUAGES:")
 
     def languages_and_time(self):
 
@@ -43,13 +39,11 @@ class CountryAPI:
             languages = country_data["languages"]
 
             for language in languages:
-                return language
+                print(language)
+
+            print("TIME ZONES:")
 
             time_zones = country_data["timezones"]
 
             for time_zone in time_zones:
-                return time_zone
-
-        else:
-            return "ERROR 404"
-#
+                print(time_zone)

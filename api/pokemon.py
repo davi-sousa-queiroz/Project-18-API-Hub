@@ -28,10 +28,9 @@ class PokemonAPI:
         pokemon_info = pokemon_API.get_pokemon_info()
 
         if pokemon_info:
-            return [
-                f"Name: {pokemon_info["name"].capitalize()}",
-                f"ID: {pokemon_info["id"]}",
-                f"Height: {pokemon_info["height"]}",
-                f"Weight: {pokemon_info["weight"]}",
-                f"Order: {pokemon_info["order"]}"
-            ]
+
+            print(f"\nName: {pokemon_info["name"].capitalize()}",
+                f"\nID: {pokemon_info["id"]}",
+                f"\nHeight: {pokemon_info["height"]}",
+                f"\nWeight: {pokemon_info["weight"]}",
+                f"\nOrder: {pokemon_info["order"]}")

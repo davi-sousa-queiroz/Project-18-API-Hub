@@ -76,11 +76,17 @@ def main():
 
             print("\nNeed some humor huh 😂? How many jokes would you like?")
 
-            quantity = int(input("\n>> "))
+            try:
 
-            joke_generator.show_jokes(quantity)
+                quantity = int(input("\n>> "))
 
-            time.sleep(1.8)
+                joke_generator.show_jokes(quantity)
+
+                time.sleep(1.8)
+
+            except:
+
+                print("\nEnter a valid number of jokes!")
 
         elif selection == "4":
 
