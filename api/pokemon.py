@@ -19,7 +19,7 @@ class PokemonAPI:
 
         else:
 
-            print(f"Failed to retrieve data {response.status_code}")
+            return f"Failed to retrieve data {response.status_code}"
 
     def show_pokemon_info(self):
 
