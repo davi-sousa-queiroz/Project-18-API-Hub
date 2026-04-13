@@ -45,3 +45,28 @@ def main():
                 print("\nSomething went wrong... is the pokemon name valid? Try again!")
 
                 time.sleep(1.5)
+
+        elif selection == "2":
+
+            print("\nEnter a Country to view stats and information!")
+
+            try:
+
+                country = input("\n>> ").lower()
+
+                country_search = CountryAPI(country)
+
+                country_search.show_country_info()
+
+                time.sleep(1.5)
+
+                country_search.languages_and_time()
+
+                time.sleep(2)
+
+            except:
+
+                print("Something went wrong... Is the country name valid? Try again!")
+
+if __name__ == "__main__":
+    main()
