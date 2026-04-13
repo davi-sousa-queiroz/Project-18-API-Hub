@@ -25,3 +25,8 @@ class FileHandler:
 
             self.save(data)
             return data
+
+    def save(self, data):
+
+        with open(self.file_name, "w") as file:
+            json.dump(data, file, indent=4)
