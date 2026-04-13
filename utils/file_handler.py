@@ -30,3 +30,5 @@ class FileHandler:
 
         with open(self.file_name, "w") as file:
             json.dump(data, file, indent=4)
+
+#
