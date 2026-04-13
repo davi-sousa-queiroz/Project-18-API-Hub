@@ -30,11 +30,9 @@ def main():
 
             try:
 
-                name = input("\n>> ")
+                name = input("\n>> ").lower()
 
                 pokemon_search = PokemonAPI(name)
-
-                pokemon = pokemon_search.get_pokemon_info()
 
                 show_pokemon_info = pokemon_search.show_pokemon_info()
 
