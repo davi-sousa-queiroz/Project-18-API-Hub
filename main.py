@@ -68,5 +68,19 @@ def main():
 
                 print("Something went wrong... Is the country name valid? Try again!")
 
+        elif selection == "3":
+
+            joke_generator = JokeAPI()
+
+            time.sleep(1)
+
+            print("\nNeed some humor huh 😂? How many jokes would you like?")
+
+            quantity = int(input("\n>> "))
+
+            joke_generator.show_jokes(quantity)
+
+            time.sleep(1.8)
+
 if __name__ == "__main__":
     main()
