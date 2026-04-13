@@ -6,3 +6,13 @@ from api.country import CountryAPI
 from api.joke import JokeAPI
 from api.pokemon import PokemonAPI
 # ----------------------------------------
+
+# -------------- MODULES -----------------
+import time
+#-----------------------------------------
+
+# --------------- WELCOME ----------------
+print("======== WELCOME TO THE API HUB ===========")
+# ----------------------------------------
+
+# ------------ MAIN GAME LOOP ------------
