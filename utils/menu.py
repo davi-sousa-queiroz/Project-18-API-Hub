@@ -8,6 +8,7 @@ def menu():
     print("5. Quit")
     print("========================")
 
-    print("\nSelect an API to utilize")
+    print("Select an API to utilize")
+    print("========================")
 
 #
