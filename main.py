@@ -82,5 +82,17 @@ def main():
 
             time.sleep(1.8)
 
+        elif selection == "4":
+
+            pass
+
+        elif selection == "5":
+
+            print("\nThank you for using the API Hub! New APIS Coming Soon! ❤️")
+
+            time.sleep(1)
+
+            break
+
 if __name__ == "__main__":
     main()
