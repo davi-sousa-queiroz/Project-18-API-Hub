@@ -6,11 +6,11 @@ from api.country import CountryAPI
 from api.joke import JokeAPI
 from api.pokemon import PokemonAPI
 # ----------------------------------------
-
+file = FileHandler()
+data = file.load()
 # -------------- MODULES -----------------
 import time
 #-----------------------------------------
-
 # --------------- WELCOME ----------------
 print("======== WELCOME TO THE API HUB ===========")
 # ----------------------------------------
@@ -38,6 +38,9 @@ def main():
 
                 print(show_pokemon_info)
 
+                data["pokemon"].append(name)
+                file.save(data)
+
                 time.sleep(1.5)
 
             except:
@@ -62,6 +65,9 @@ def main():
 
                 country_search.languages_and_time()
 
+                data["countries"].append(country)
+                file.save(data)
+
                 time.sleep(2)
 
             except:
@@ -81,6 +87,9 @@ def main():
                 quantity = int(input("\n>> "))
 
                 joke_generator.show_jokes(quantity)
+
+                data["joke_count"] += quantity
+                file.save(data)
 
                 time.sleep(1.8)
 
