@@ -1,6 +1,7 @@
 # ------------ UTILITY FILES -------------
 from utils.file_handler import FileHandler
 from utils.menu import menu
+from utils.history import History
 # ---------- API PYTHON FILES ------------
 from api.country import CountryAPI
 from api.joke import JokeAPI
@@ -8,6 +9,7 @@ from api.pokemon import PokemonAPI
 # ----------------------------------------
 file = FileHandler()
 data = file.load()
+history = History(data)
 # -------------- MODULES -----------------
 import time
 #-----------------------------------------
@@ -99,7 +101,7 @@ def main():
 
         elif selection == "4":
 
-            pass
+            history.view()
 
         elif selection == "5":
 
